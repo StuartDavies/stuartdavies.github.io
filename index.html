@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/stuartdavies.css">
     <title>Stuart Davies</title>
 </head>
+
 <body>
-    Hello!
+
+    <video autoplay muted loop id="background-video">
+        <source src="media/video/Pexels Videos 1620050.mp4" type="video/mp4">
+    </video>
+
+    <div id="header">
+
+        <div class="logo">
+            Stuart Davies
+        </div>
+
+        <!--
+        <nav>
+            <ul>
+                <li><a href="#">Get in touch</a></li>
+            </ul>
+        </nav>        
+        -->
+    </div>
+
+    <div id="content">
+        <div id="hello">
+            <h2 id="greeting">Well hello there.</h2>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="social-media">
+            <a href="https://www.linkedin.com/in/stuartdavies/" target="_blank"><img src="media/images/Linkedin_2.svg" alt="A link to my LinkedIn profile" class="social-media-icon" /></a>
+            <a href="https://github.com/stuartdavies" target="_blank"><img src="media/images/Github_2.svg" alt="A link to my GitHub page" class="social-media-icon" /></a>
+        </div>
+        <div id="legal">
+            <ul id="legal-menu">
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li><a href="#">Cookie Disclosure</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li>Copyright © 2022 Stuart Davies</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        
+                var greetings = ["Hello", "Hola", "Bonjour", "Zdravstvuyte", "Nǐn hǎo", "Salve", "Konnichiwa", "Guten Tag", "Olá", "Anyoung haseyo", "Asalaam alaikum", "Goddag", "Shikamoo", "Goedendag", "Yassas", "Dzień dobry", "Selamat siang", "Namaste", "Merhaba", "Shalom", "God dag"];        
+
+                var myVar = setInterval(myTimer, 1000);
+
+                var nextIndex = 0;
+
+                function myTimer() 
+                {
+                    var d = new Date();
+
+                    nextIndex = nextIndex + 1;
+                    if (nextIndex >= greetings.length) nextIndex = 0;
+                    document.getElementById("greeting").innerHTML =  greetings[nextIndex].toUpperCase();
+
+                    var result = nextIndex == 0 ? true : false;
+
+                }      
+                  
+    </script>
 </body>
+
 </html>

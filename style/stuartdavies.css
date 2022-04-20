@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body, html 
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: Lato, Montserrat, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    background-color: black;
+}
+
+#background-video 
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+p 
+{
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-top: 10px;
+    color: linen;
+}
+
+#header 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: rgba(1, 1, 1, 0.5);
+}
+
+#content 
+{
+    position: fixed;
+    top: 100px;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.logo 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    margin-left: 25px;
+    line-height: 80px;
+    font-size: 4em;
+    font-weight: 400;
+    color: linen;
+}
+
+.logo > a 
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul
+{
+    margin: 0px;
+    padding: 20px;
+    float: right;
+    font-size: 1.4em;
+    letter-spacing: -0.01em;
+    line-height: 60px;
+    color: white;
+}
+
+nav li 
+{
+    display: inline;
+}
+
+nav a 
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover 
+{
+    text-decoration: none;
+    border-bottom: 1px white dotted;
+}
+
+nav li:not(:last-child)::after 
+{
+    content: "|";
+    margin: 0 .25em;
+}
+
+#hello 
+{
+    width: 680px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 25px;
+    /*
+    background: rgba(0, 0, 0, 0.5);
+    border-width: 6px;
+    border-color: rgba(250, 240, 230, 0.5);
+    border-style: solid;
+    */
+    color: linen;
+    text-shadow: 3px 3px 5px #333333;    
+}
+
+#hello > h1 
+{
+    margin: 0px;
+    margin-top: -7px;
+    font-size: 6em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 100%;
+}
+
+#hello > h2 
+{
+    margin: 0px;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-left: 6px;
+    line-height: 1.12em;
+    text-align: center;
+}
+
+#hello > h3 
+{
+    font-size: 1.4em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.6em;
+    margin-left: 6px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#hello > p 
+{
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: linen;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+}
+
+#hello > ul 
+{
+    font-size: 1.4em;
+}
+
+#hello >ul > li 
+{
+    margin: 10px;
+}
+
+#footer 
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(1, 1, 1, 0.5);
+    color: grey;
+}
+
+#social-media
+{
+    float: left;
+    text-align: center;
+}
+
+.social-media-icon
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 30px;
+}
+
+#legal-menu 
+{
+    float: right;
+    margin: 0px;
+    font-size: 1em;
+    line-height: 50px;
+}
+
+#legal-menu > li 
+{
+    display: inline;
+    color: inherit;
+}
+
+#legal-menu > li > a 
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+#legal-menu > li > a:hover 
+{
+    text-decoration: none;
+    border-bottom: 1px white dotted;
+}
+
+#legal-menu > li:not(:last-child)::after 
+{
+    content: "|";
+    margin: 0 .25em;
+}
