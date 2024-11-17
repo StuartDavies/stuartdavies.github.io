@@ -3,12 +3,15 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MJFMX4HF');</script>
-    <!-- End Google Tag Manager -->    
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MJFMX4HF');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/normalize.css">
@@ -18,10 +21,9 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJFMX4HF"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->    
-
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJFMX4HF" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <video autoplay muted loop playsinline id="background-video">
         <source src="media/video/Pexels Videos 1620050.mp4" type="video/mp4">
     </video>
@@ -49,8 +51,10 @@
 
     <div id="footer">
         <div id="social-media">
-            <a href="https://www.linkedin.com/in/stuartdavies/" target="_blank"><img src="media/images/Linkedin_2.svg" alt="A link to my LinkedIn profile" class="social-media-icon" /></a>
-            <a href="https://github.com/stuartdavies" target="_blank"><img src="media/images/Github_2.svg" alt="A link to my GitHub page" class="social-media-icon" /></a>
+            <a href="https://www.linkedin.com/in/stuartdavies/" target="_blank"><img src="media/images/Linkedin_2.svg"
+                    alt="A link to my LinkedIn profile" class="social-media-icon" /></a>
+            <a href="https://github.com/stuartdavies" target="_blank"><img src="media/images/Github_2.svg"
+                    alt="A link to my GitHub page" class="social-media-icon" /></a>
         </div>
         <div id="legal">
             <ul id="legal-menu">
@@ -63,25 +67,24 @@
     </div>
 
     <script>
-        
-                var greetings = ["Hello", "Hola", "Bonjour", "Zdravstvuyte", "Nǐn hǎo", "Salve", "Konnichiwa", "Guten Tag", "Olá", "Anyoung haseyo", "Asalaam alaikum", "Goddag", "Shikamoo", "Goedendag", "Yassas", "Dzień dobry", "Selamat siang", "Namaste", "Merhaba", "Shalom", "God dag"];        
 
-                var myVar = setInterval(myTimer, 1000);
+        var greetings = ["Hello", "Hola", "Bonjour", "Zdravstvuyte", "Nǐn hǎo", "Salve", "Konnichiwa", "Guten Tag", "Olá", "Anyoung haseyo", "Asalaam alaikum", "Goddag", "Shikamoo", "Goedendag", "Yassas", "Dzień dobry", "Selamat siang", "Namaste", "Merhaba", "Shalom", "God dag"];
 
-                var nextIndex = 0;
+        var myVar = setInterval(myTimer, 1000);
 
-                function myTimer() 
-                {
-                    var d = new Date();
+        var nextIndex = 0;
 
-                    nextIndex = nextIndex + 1;
-                    if (nextIndex >= greetings.length) nextIndex = 0;
-                    document.getElementById("greeting").innerHTML =  greetings[nextIndex].toUpperCase();
+        function myTimer() {
+            var d = new Date();
 
-                    var result = nextIndex == 0 ? true : false;
+            nextIndex = nextIndex + 1;
+            if (nextIndex >= greetings.length) nextIndex = 0;
+            document.getElementById("greeting").innerHTML = greetings[nextIndex].toUpperCase();
 
-                }      
-                  
+            var result = nextIndex == 0 ? true : false;
+
+        }
+
     </script>
 </body>
 
